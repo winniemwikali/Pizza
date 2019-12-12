@@ -10,7 +10,7 @@ const order = document.getElementById("btn");
 
         alert(`Your order has been received amounting to ${totalCost}`);
         prompt(`please enter your location.`);
-        alert(`Your order will be delivered in a few, please have some ksh.300 for delivery.`)
+        alert(`Your order will be delivered in a few, please have some ksh.300 together with total amount for delivery.`)
 
         if (delivery.checked) {
             
