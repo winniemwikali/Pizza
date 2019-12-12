@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/scripts.js"></script>
+    <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <title>Pizza</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="jumbotron">
+        <div class="parlor">
+        <h1>Pizza Parlor</h1>
+    </div>
+</div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Size</h2>
+                <form id="order">
+                    <div class="pizza-order">
+                        <div class="second-pizza">
+                            <select class="form-control pizza-size">
+                                <option value="6">small</option>
+                                <option value="8">Medium</option>
+                                <option value="10">Large</option>
+                            </select>
+                            <p class="sizes">Prices are sm-KES6, md-KES8, and lg-KES10</p>
+                            <h3>Toppings</h3>
+                            <h4>Each topping is an extra KES2.00</h4>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="toppings" value="1">Sausage</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="toppings" value="1">Bacon</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="toppings" value="1">Mushrooms</label>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="toppings" value="1">Pepperoni</label>
+                                </div>
+                               </div>
+                        </div>
+                    </div>
+                    <span class="btn btn-success" id="add-more-pizza">Another topping</span>
+                    <button style="margin: 16px" type="submit" class="btn btn-primary">Place Order</button>
+                </form>
+               </div>
+               <div class="col-md-4"></div>
+        </div>
+    </div>
 </body>
 </html>
