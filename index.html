@@ -7,7 +7,12 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <script src="js/scripts.js"></script>
-    <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <title>Pizza</title>
 </head>
 <body>
@@ -19,47 +24,60 @@
 </div>
         <div class="row">
             <div class="col-md-4">
-                <h2>Size</h2>
-                <form id="order">
-                    <div class="pizza-order">
-                        <div class="second-pizza">
-                            <select class="form-control pizza-size">
-                                <option value="6">small</option>
-                                <option value="8">Medium</option>
-                                <option value="10">Large</option>
-                            </select>
-                            <p class="sizes">Prices are sm:Ksh600, md:Ksh800 and lg:Ksh1200</p>
-                            <h3>Toppings</h3>
-                            <h4>Each topping is an extra Ksh200</h4>
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="toppings" value="1">Sausage</label>
+                    <form>
+                            <div id="size">
+                                <label for="pizzaSize">Select size</label>
+                                <select class="sizes" id="pizzaSize">
+                                    <option label="Large" value="600" ></option>
+                                    <option label="Medium" value="800"></option>
+                                    <option label="Small" value="1200"></option>
+                                </select>
                             </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="toppings" value="1">Bacon</label>
+                            <div id="crust">
+                                <label for="pizzaCrust">Slecet crust</label>
+                                <select class="crust" id="pizzaCrust">
+                                    <option label="Chicago - 700" value="700"></option>
+                                    <option label="Neopoletan - 600" value="600"></option>
+                                    <option label="Deep-fish - 500" value="500"></option>
+                                </select>
                             </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="toppings" value="1">Mushrooms</label>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" name="toppings" value="1">Pepperoni</label>
-                                </div>
-                               </div>
-                        </div>
+                            <div id="toppings">
+                                <label for="pizzaTopping">Select toppings</label>
+                                <select class="topping" id="pizzaToppings">
+                                    <option label="Pepperoni" value="80"></option>
+                                    <option label="Onions" value="60"></option>
+                                    <option label="Sausages" value="40"></option>
+                                </select>
+                            </div>
+                            <div id="guant">
+                                <label for="quantity">Quantity</label>
+                                <input id="quantity" type="number" value="1">
+                            </div>
+                            <div>
+                                <button type="button" id="btn" onclick="placeOrder()" label="">Confirm</button>
+                            </div>    
+                        </form>
                     </div>
-                    <span class="btn btn-success" id="add-more-pizza">Another topping</span>
-                    <button style="margin: 16px" type="submit" class="btn btn-primary">Place Order</button>
-                </form>
-               </div>
-               <div class="col-md-4">
-                   <div id="show-pizza-results">
-                       <h5 class="order">Your pizza Order:</h5>
-                       <div id="pizza-price">
-                           <ul>
-                          </ul>
-                       </div>
-                       <h1 id="final-total"></h1>
-                   </div>
-               </div>
-        </div>
-    </div>
+                </div>
+               
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <a>fb</a>
+                </div>
+                <div class="col-md-3">
+                    <a>tw</a>
+                </div>
+                <div class="col-md-3">
+                    <a></a>
+                </div>
+                <div class="col-md-3">
+                    <a>fb</a>
+                </div>
+            </div>
+       </div> 
+       <script src="js/main.js" ></script>
+       <script src="js/modal.js"></script>
+            
 </body>
 </html>
