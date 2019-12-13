@@ -1,5 +1,6 @@
 .jumbotron{
     padding: 5px;
+    width: 100%;
     
 }
 .parlor{
@@ -7,21 +8,26 @@
 }
 h1{
     font-family: 'Anton', sans-serif;
+    text-align: center;
 }
 .img{
-    border-radius: 10px;
+    border-radius: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    
+    
 }
 
-body{
+ body{
     background-image: url();
     background-repeat: no-repeat;
     background-size: cover;
-}
+} 
 
 
 form{
     display: flex;
-    color: black;
+    
     
 }
 
@@ -31,7 +37,7 @@ label{
 
 label, select{
     margin-top: 1vh;
-    margin-left: 2vh;
+    margin-left: 4vh;
 }
 
 input[type=number]{
