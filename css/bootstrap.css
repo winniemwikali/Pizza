@@ -261,6 +261,7 @@ select {
 
 select {
   word-wrap: normal;
+  border-color: skyblue;
 }
 
 button,
