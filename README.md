@@ -16,8 +16,8 @@ https://winniemwikali.github.io/AKAN-NAMES.git.io/
 - Feed in the command sudo apt-get update. Then key in sudo apt AKAN-NAMES
 
 ## BDD
-- If the user keys in a date that is null or less than 2000 and they try o submit to get their akan names it should be redisplayed with an error message[Invalid date] advising them to input the correct details.
-- If the user keys an invalid month is the application should display Invalid month.
+- If a customer pick the size of pizza, topping and crust that they want and submit,an alert pops informing them that their order has been received.
+- Also a propmt pops telling the customer to enter their location.
 
 ## Technologies used
 - HTML
