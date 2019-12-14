@@ -4,8 +4,8 @@
 ## Description
 - The project is an application that helps customers to order pizza according to the size they want and types of crusts and toppings that they need.
 
-##Live Link
-https://winniemwikali.github.io/AKAN-NAMES.git.io/
+## Live Link
+https://winniemwikali.github.io/Pizza/
 
 ## Author
 - Winnie Mwikali Web Developer
