@@ -8,15 +8,27 @@ nav>ul>li{
     list-style: none;
     display: inline;
     padding-left: 10px;
-    color: green;
+    
 
 }
-nav{
+nav{position: fixed;
     text-align: center;
     font-size: 30px;
     padding-left: 10px;
     text-decoration: underline;
-    color: green;
+    border: 2px solid black;
+    background:lightgreen;
+    width: 100%;
+    padding: 20px;
+    padding-left: 10px;
+    
+    
+}
+nav ul li {
+    padding:10px 14px;
+}
+ul>li{
+color: black;
 }
 
 
