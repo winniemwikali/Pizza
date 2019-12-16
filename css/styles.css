@@ -4,6 +4,22 @@
     padding-bottom: 20px;
 
 }
+nav>ul>li{
+    list-style: none;
+    display: inline;
+    padding-left: 10px;
+    color: green;
+
+}
+nav{
+    text-align: center;
+    font-size: 30px;
+    padding-left: 10px;
+    text-decoration: underline;
+    color: green;
+}
+
+
 
 .parlor {
     background: url();
@@ -54,7 +70,7 @@ input[type=number] {
     margin-top: 1vh;
     margin-left: 2vh;
     width: 5vw;
-    color: blue;
+    
 }
 
 #btn {
@@ -94,4 +110,14 @@ h2{
     font-family: 'Lilita One', cursive;
     color: green;
 
+}
+#Home{
+    background-image: url("https://bit.ly/2YTGYiJ");
+padding-bottom: 350px;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+h3{
+    text-align: center;
 }

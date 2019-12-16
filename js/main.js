@@ -12,12 +12,7 @@ const order = document.getElementById("btn");
         prompt(`please enter your location.`);
         alert(`Your order will be delivered in a few, please have some ksh.300 together with total amount for delivery.`)
 
-        if (delivery.checked) {
-            
-        } else {
-            
-        }
-        prompt(``)
+       
 
         
 
